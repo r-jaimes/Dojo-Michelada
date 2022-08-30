@@ -10,7 +10,5 @@ const firstAttempt = x => {
 /*
 * Use a reducer to replace each number in its right spot.
 */
-const createPhoneNumber = x => {
-  return x.reduce((accumulator, number) => (accumulator.replace('x', number)), '(xxx) xxx-xxxx');
-}
+const createPhoneNumber = x => x.reduce((accumulator, number) => accumulator.replace('x', number), '(xxx) xxx-xxxx');
 
